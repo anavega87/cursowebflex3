@@ -77,13 +77,11 @@ h4 {
 
 .video-container {
   width: 100vw;
-  height: 100vh;
   overflow: hidden;
 }
 
 iframe {
-  width: 100vw;
-  height: 117vh;
+  width: 100%;
 }
 
 * {
