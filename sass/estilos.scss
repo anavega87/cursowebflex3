@@ -13,9 +13,7 @@
     body {
         background-color: rgb(0, 0, 0);
     }
-    iframe {
-        width: auto;
-    }
+
 }
 // tablet
 @media only screen and (min-width: 501px) and (max-width: 961px) {
@@ -23,18 +21,14 @@
         background-color: rgb(0, 0, 0);
     }
 
-    iframe {
-        width: auto;
-    }
+
 }
 // desktop
 @media only screen and (min-width: 961px) {
     body {
         background-color: rgb(0, 0, 0);
     }
-    iframe{
-        width: auto;
-    }
+
 }
 
 html{
@@ -97,7 +91,6 @@ h4{
     font-weight: 200;
     text-align: center;
 }
-
 
 
 // header ------------------------------------------------------->

@@ -8,24 +8,15 @@
   body {
     background-color: rgb(0, 0, 0);
   }
-  iframe {
-    width: auto;
-  }
 }
 @media only screen and (min-width: 501px) and (max-width: 961px) {
   body {
     background-color: rgb(0, 0, 0);
   }
-  iframe {
-    width: auto;
-  }
 }
 @media only screen and (min-width: 961px) {
   body {
     background-color: rgb(0, 0, 0);
-  }
-  iframe {
-    width: auto;
   }
 }
 html {
