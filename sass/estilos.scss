@@ -94,20 +94,20 @@ h4{
 }
 
 
-.video-container {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  border-radius: 10px;
+.videoWrapper {
+  height:600px;
+  width:600px;
+  position:relative;
+  overflow:hidden;
 }
 
-
-iframe {
-  width: 100%;
-  height: 117vh;
-  border-radius: 10px;
+.videoWrapper iframe {
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	bottom:0;
 }
-
 // header ------------------------------------------------------->
 
 * {
