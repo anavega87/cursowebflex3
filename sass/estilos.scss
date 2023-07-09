@@ -109,7 +109,8 @@ h4{
   .nav {
     height: 50px;
     width: 100%;
-    position: static;
+    position: sticky;
+    z-index: 8;
     .nav-header {
         display: inline;
       }

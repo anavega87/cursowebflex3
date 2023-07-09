@@ -87,7 +87,8 @@ body {
 .nav {
   height: 50px;
   width: 100%;
-  position: static;
+  position: sticky;
+  z-index: 8;
 }
 .nav .nav-header {
   display: inline;
