@@ -95,8 +95,8 @@ h4{
 
 
 .videoWrapper {
-  height:600px;
-  width:600px;
+  height:100%;
+  width:100%;
   position:relative;
   overflow:hidden;
 }
@@ -104,9 +104,6 @@ h4{
 .videoWrapper iframe {
 	height:100%;
 	width:100%;
-	position:absolute;
-	top:0;
-	bottom:0;
 }
 // header ------------------------------------------------------->
 
