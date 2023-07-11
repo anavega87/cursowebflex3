@@ -50,21 +50,22 @@
 <h1>Servicios</h1>
 <hr>
 <!--servicio y descripción 1 ----------------------------------------------------------------->
+<!--cuanto al uso de GRID para maquetar, recuerda que la etiqueta padre debe tener además de display:grid, grid-template-column (para definir el tamaño y la cantidad de columnas (un valor por cada columna)), grid-template-row (para definir la cantidad de filas y el tamaño de cada una(un valor por cada fila)) y grid-template-areas (donde definís el nombre que levará cada área y el lugar que ocupa dentro de la grilla)
+Para acomodar los elementos dentro de la grilla tenemos dos opciones. En caso de que uses las áreas, el template-areas en el padre y el grid-area en el hijo. También podes no definir las áreas en el padre y trabajar con grid-column y grid-row en el hijo, que está muy bien también.
+Te dejo el link a una página que puede ayudarte a generar el código completo de tu grid. Luego vos tenes que modificarle las clases y amoldarlo a tu sitio. https://grid.layoutit.com .
+-->
 
-<section class="serviciosSeccion">
-  <div class="serviciosRow">
-  </div>
-
+<section class="serviciosContainer">
   <div class="serviciosRow">
     <div class="serviciosColumn">
       <div class="serviciosCard">
         <div class="iconWrapper">
           <img src="../imagenes/branding.png" alt="ícono para graficar branding">
         </div>
-        <h2 style="color: antiquewhite;">Branding</h2>
-        <p>Creación de contenido <br>
-          Redacción y corrección de textos<br>
-          Escritura UX, voz y tono</p> 
+        <h2 >Branding</h2>
+        <p>Diseño de iso/logotipo <br>
+          Papelería institucional<br>
+          Diseño para redes</p> 
       </div>
     </div>
   </div>
@@ -73,10 +74,7 @@
 
 <!--servicio y descripción 2 ----------------------------------------------------------------->
 
-
-<section class="serviciosSeccion">
-  <div class="serviciosRow">
-  </div>
+<section class="serviciosContainer">
 
   <div class="serviciosRow">
     <div class="serviciosColumn">
@@ -84,9 +82,9 @@
         <div class="iconWrapper">
          <img src="../imagenes/type.png" alt="ícono para graficar redacción">
         </div>
-        <h2 style="color: antiquewhite;">Redacción</h2>
+        <h2>Redacción</h2>
         <p>Creación de contenido <br>
-          Redacción y corrección de textos<br>
+          Redacción y corrección<br>
           Escritura UX, voz y tono</p> 
       </div>
     </div>
@@ -96,14 +94,16 @@
 <!--servicio y descripción 3 ----------------------------------------------------------------->
 
 
-<section class="serviciosSeccion">
+
+
+<section class="serviciosContainer">
   <div class="serviciosRow">
     <div class="serviciosColumn">
       <div class="serviciosCard">
         <div class="iconWrapper">
-          <img src="../imagenes/animation.png" alt="ícono para graficar animación">
+         <img src="../imagenes/animation.png" alt="ícono para graficar redacción">
         </div>
-        <h2 style="color: antiquewhite;">Animaciónn</h2>
+        <h2>Animación</h2>
         <p>Videos institucionales <br>
           Banners animados <br>
           Edición básica de videos</p>
@@ -111,6 +111,7 @@
     </div>
   </div>
 </section>
+
     </main>
 
 
