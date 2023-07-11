@@ -303,43 +303,50 @@ h4{
     background: rgb(77, 77, 77);
     margin-bottom: 50px;
   }
-  
+
   * {
     box-sizing: border-box;
   }
-
-  /* Float four columns side by side */
-  .column {
+  
+  /* Float three columns side by side */
+  .serviciosColumn {
     float: left;
-    width: 33%;
-    padding: 0 10px;
+    width: 33.3%;
+    padding: 10px 10px;
   }
   
-  /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 0 -5px;}
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-  }
-  
-  /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
+  /* Responsive columns */
+  @media screen and (max-width: 1000px) {
     .column {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .serviciosColumn {
       width: 100%;
       display: block;
       margin-bottom: 20px;
     }
+  }
+  
+  
+  /* Style the counter cards */
+  .serviciosCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  
+
+  img {
+    border-radius: 10px 10px 10px 10px;
   }
   
   .serviciosSeccion{
