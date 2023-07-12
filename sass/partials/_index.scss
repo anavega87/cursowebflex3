@@ -1,0 +1,70 @@
+
+#banner-bienvenida {
+    width: 100%;
+    background-color: #000000;
+}
+
+.videoContenedor {
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 0px;
+  margin-right: 0;
+  padding-right: 0;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  
+
+  iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 99%;
+    height: 100%;
+    border-radius: 10px;
+
+    
+  }
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 33;
+    max-width: 33%;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .column:hover{
+    transition: all 0,2s;
+    transform: scale(101%);
+    opacity: 83%;
+  }
+
+  // sección trabajos en index ------------------------------------------------------->
+
+  .trabajos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    img {
+        width: 33%;
+        border-radius: 10px;
+    }
+
+}
+
