@@ -4,7 +4,7 @@ hr {
     top: 20px;
     border: none;
     height: 2px;
-    background: rgb(77, 77, 77);
+    background: $grisFondo;
     margin-bottom: 50px;
     }
     
@@ -21,15 +21,13 @@ hr {
    
     @media (max-width:600px) {
     .serviciosRow {
-      display: flex;
-      flex-wrap: wrap;
+        @extend  .holaRow;
     }
   }
 
   @media only screen and (min-width: 601px) and (max-width: 961px) {
     .serviciosRow {
-      display: flex;
-      flex-wrap: wrap;
+        @extend  .holaRow;
     }
   }
 
@@ -47,12 +45,12 @@ hr {
     background: linear-gradient(#383737 50%, #515050 50%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
-    border-radius: 10px;
+    border-radius: $radius;
     }
     
     
     .serviciosCard p {
-    color: #ddd;
+    color: $blanco;
     }
     
     
@@ -68,7 +66,7 @@ hr {
     font-size: 30px;
     height: 2.5em;
     width: 2.5em;
-    color: #e4e4e4;
+    color: $blanco;
     border-radius: 50%;
     margin-bottom: 10px;
     display: grid;
@@ -78,7 +76,7 @@ hr {
     
     
     .iconWrapper:hover .iconWrapper {
-    background-color: #e4e4e4;
+    background-color: $blanco;
     color: #515050;
     transition: 0.10s;
 

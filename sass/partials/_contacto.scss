@@ -6,12 +6,12 @@
   }
   
   body {
-    background: linear-gradient(to right, #262626 0%, #000000 100%);
+    background: linear-gradient(to right, #262626 0%, $background 100%);
     font-size: 12px;
   }
   
   body, button, input {
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia;
     font-weight: 700;
     letter-spacing: 1.4px;
   }
@@ -29,7 +29,7 @@
   .screen {
     position: relative;
     background: #3e3e3e;
-    border-radius: 15px;
+    border-radius: $radius;
   }
   
   .screen:after {
@@ -40,7 +40,7 @@
     left: 20px;
     right: 20px;
     bottom: 0;
-    border-radius: 15px;
+    border-radius: $radius;
     box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
     z-index: -1;
   }
@@ -50,8 +50,8 @@
     align-items: center;
     padding: 10px 20px;
     background: #4d4d4f;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
   }
   
   .screen-header-left {
@@ -63,8 +63,8 @@
     width: 8px;
     height: 8px;
     margin-right: 3px;
-    border-radius: 8px;
-    background: white;
+    border-radius: $radius;
+    background: $blanco;
   }
   
   .screen-header-right {
@@ -75,12 +75,12 @@
     width: 3px;
     height: 3px;
     margin-left: 2px;
-    border-radius: 8px;
+    border-radius: $radius;
     background: #999;
   }
   
   .screen-body {
-    display: flex;
+    @extend .screen-header-right;
   }
   
   .screen-body-item {
@@ -89,15 +89,15 @@
   }
   
   .screen-body-item.left {
-    display: flex;
+    @extend .screen-header-right;
     flex-direction: column;
   }
   
   .app-title {
-    display: flex;
+    @extend .screen-header-right;
     flex-direction: column;
     position: relative;
-    color: #ffffff;
+    color: $blanco;
     font-size: 26px;
   }
   
@@ -109,7 +109,7 @@
     bottom: -10px;
     width: 25px;
     height: 4px;
-    background: #ffffff;
+    background: $blanco;
   }
   
   .app-contact {
@@ -151,13 +151,13 @@
   }
   
   .app-form-control:focus {
-    border-bottom-color: #ddd;
+    border-bottom-color: $blanco;
   }
   
   .app-form-button {
     background: none;
     border: none;
-    color: #e4e4e4;
+    color: $blanco;
     font-size: 14px;
     cursor: pointer;
     outline: none;

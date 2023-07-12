@@ -11,7 +11,7 @@
 // mobile
 @media only screen and (max-width: 500px) {
     body {
-        background-color: rgb(0, 0, 0);
+        background-color:$background;
     }
 
 
@@ -19,7 +19,7 @@
 // tablet
 @media only screen and (min-width: 501px) and (max-width: 961px) {
     body {
-        background-color: rgb(0, 0, 0);
+        background-color: $background;
     }
 
 
@@ -27,15 +27,15 @@
 // desktop
 @media only screen and (min-width: 961px) {
     body {
-        background-color: rgb(0, 0, 0);
+        background-color: $background;
     }
 
 }
 
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia;
     font-size: 62.5%;
-    background: linear-gradient(to right, #262626 0%, #000000 100%);
+    background: linear-gradient(to right, #262626 0%, $background 100%);
 
 }
 
@@ -43,7 +43,7 @@ html{
 
 p{
     color: rgb(168, 168, 168);
-    font-family:'Roboto', sans-serif;
+    font-family: $tipografia;
     font-size: 2rem;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -53,7 +53,7 @@ p{
 
 .Subtitulo{
     color: rgb(185, 185, 185);
-    font-family: 'Roboto', sans-serif;
+    font-family: $tipografia;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,8 +65,8 @@ p{
 
 
 h1{
-    color: rgb(226, 226, 226);
-    font-family: 'Roboto', sans-serif;
+    color: $blanco;
+    font-family: $tipografia;
     font-weight: 200;
     font-size: 5rem;
     margin-left: 15px;
@@ -78,12 +78,12 @@ h1{
 h2{
     font-size: 4rem;
     font-weight: 500;
-    color: rgb(226, 226, 226);
+    color: $blanco;
 }
 
 h3{
     font-size: 3rem;
-    color: rgb(236, 236, 236);
+    color:$blanco;
     font-weight: 300;
 }
 
