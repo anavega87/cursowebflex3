@@ -54,16 +54,15 @@
   // sección trabajos en index ------------------------------------------------------->
 
   .trabajos{
-    display: flex;
-    flex-direction: row;
+    @include flexflex (row, space-between, center)
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    justify-content: space-between;
+
     img {
         width: 33%;
         border-radius: $radius;
-    }
+    }  
 
-}
+  } 
 

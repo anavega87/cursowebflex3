@@ -1,11 +1,8 @@
 
 .main-portfolio-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexflex (row, center, center);
     background-color: $background;
     align-items: center;
-
 }
 
 

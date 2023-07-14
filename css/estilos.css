@@ -222,10 +222,11 @@ body {
 .trabajos {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  justify-content: space-between;
+ 
 }
 .trabajos img {
   width: 33%;
@@ -580,4 +581,4 @@ body, button, input {
 .enlaces-footer:hover {
   opacity: 60%;
   transform: scale(1.3);
-}/*# sourceMappingURL=estilos.css.map */
+}

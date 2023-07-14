@@ -9,8 +9,22 @@ $grisFondo: rgb(77, 77, 77);
 
 $background: rgb(11, 11, 11);
 
-$blanco: white
+$blanco: white;
 
 //Border radius generales ----------->
 
-$radius 10px
+$radius: 10px;
+
+//Mixin ----------->
+
+@mixin flexflex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+
+}
+
+div{
+    @include flexflex (row, center ,center)
+}

@@ -8,36 +8,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 //font-family: 'Roboto', sans-serif;
 
-// mobile
-@media only screen and (max-width: 500px) {
-    body {
-        background-color:$background;
-    }
-
-
-}
-// tablet
-@media only screen and (min-width: 501px) and (max-width: 961px) {
-    body {
-        background-color: $background;
-    }
-
-
-}
-// desktop
-@media only screen and (min-width: 961px) {
-    body {
-        background-color: $background;
-    }
-
-}
-
-html{
-    font-family: $tipografia;
-    font-size: 62.5%;
-    background: linear-gradient(to right, #262626 0%, $background 100%);
-
-}
 
 // estilos generales --------------------------------------------> 
 
@@ -125,19 +95,6 @@ h4{
 
   // responsive -------------------------------------------------->
 
-  @media screen and (max-width: 961px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-  
-  
-  @media screen and (max-width: 500px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+  @import url(partials/_mquery.scss);
 
 
