@@ -54,7 +54,7 @@
   // sección trabajos en index ------------------------------------------------------->
 
   .trabajos{
-    @include flexflex (row, space-between, center)
+    @include flexflex (row, space-between, center);
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 20px;
